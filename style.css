@@ -14,7 +14,7 @@ body {
     font-family: var(--font-body);
     background-color: var(--bg-color);
     color: var(--secondary-color);
-    min-height: 100vh; /* Garantir que a altura mínima da página ocupe toda a tela */
+    min-height: 100vh; /* Garante que o corpo da página tenha no mínimo a altura da tela */
     display: flex;
     flex-direction: column;
 }
@@ -58,7 +58,7 @@ nav ul li a:hover {
 main {
     padding: 2rem;
     text-align: center;
-    flex-grow: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
+    flex-grow: 1; /* Permite que o conteúdo principal ocupe o espaço restante da tela */
 }
 
 .intro {
@@ -89,8 +89,9 @@ footer {
     padding: 1rem 0;
     border-top: 3px solid var(--accent-color);
     width: 100%; /* Garante que o rodapé ocupe toda a largura */
-    position: relative;
+    position: relative; /* Ajusta a posição do rodapé para ficar no final da página */
     bottom: 0;
+    flex-shrink: 0; /* Garante que o rodapé não encolha */
 }
 
 footer p {
