@@ -3,63 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estatísticas de Jogos</title>
+    <title>Estatísticas de Jogos e Leitura</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>JogoStats</h1>
+            <h1>StatsHub</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#jogos-mundo">Jogos no Mundo</a></li>
-                <li><a href="#morelli">Jogos no Colégio Morelli</a></li>
+                <li><a href="#jogos">Estatísticas de Jogos</a></li>
+                <li><a href="#morelli">Colégio Morelli</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Seção de Introdução -->
+        <!-- Seção de Início -->
         <section id="inicio" class="intro">
-            <div class="centralizado">
-                <h2>Estatísticas de Pessoas que Gostam de Jogos</h2>
-                <p>Descubra as preferências de jogos no mundo e no Colégio Morelli!</p>
+            <h2>Estatísticas de Jogos no Mundo</h2>
+            <p>Os jogos são uma paixão global, conectando jogadores de todas as idades e culturas. Acompanhe as tendências dos gêneros mais populares e descubra como o entretenimento digital está moldando as novas gerações.</p>
+            <div class="grafico-container">
+                <div id="grafico"></div>
             </div>
-            <div id="grafico"></div>
-        </section>
-
-        <!-- Seção de Estatísticas de Jogos no Mundo -->
-        <section id="jogos-mundo" class="intro">
-            <div class="centralizado">
-                <h2>Estatísticas de Jogos no Mundo</h2>
-                <p>Os jogos são uma paixão global, conectando jogadores de todas as idades e culturas. Acompanhe as tendências dos gêneros mais populares e descubra como o entretenimento digital está moldando as novas gerações.</p>
-                <p>No Colégio Morelli, os jogos também ocupam um lugar especial. De competições escolares a jogos educativos, o interesse pelos games cresce ano após ano, criando um ambiente dinâmico e divertido.</p>
-            </div>
-            <div id="grafico-global"></div>
         </section>
 
         <!-- Seção de Estatísticas no Colégio Morelli -->
         <section id="morelli" class="info-section">
             <h2>Estatísticas de Jogos no Colégio Morelli</h2>
-            <p>No Colégio Morelli, o interesse por jogos é crescente. As competições de eSports, bem como o uso de jogos educativos, têm sido um grande sucesso entre os alunos. Abaixo estão as preferências dos estudantes quanto aos tipos de jogos.</p>
-            <div id="grafico-morelli"></div>
+            <p>No Colégio Morelli, os jogos também ocupam um lugar especial. De competições escolares a jogos educativos, o interesse pelos games cresce ano após ano, criando um ambiente dinâmico e divertido.</p>
+            <div class="grafico-container">
+                <div id="grafico-morelli"></div>
+            </div>
         </section>
 
         <!-- Seção de Contato -->
         <section id="contato" class="info-section">
             <h2>Contato</h2>
             <p><strong>Telefone:</strong> (99) 99999-9999</p>
-            <p><strong>Email:</strong> contato@jogostats.com</p>
-            <p><strong>Instagram:</strong> <a href="https://instagram.com/jogostats" target="_blank">@jogostats</a></p>
+            <p><strong>Email:</strong> contato@statshub.com</p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/statshub" target="_blank">@statshub</a></p>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 JogoStats - Desenvolvido por leticia</p>
+        <p>© 2024 StatsHub - Desenvolvido por Leticia</p>
     </footer>
 
     <script src="script.js"></script>
