@@ -1,46 +1,45 @@
-// Dados para o gráfico de Jogos Globais
-const dataGlobal = [
+// Dados para o gráfico de Estatísticas Globais de Jogos
+const data = [
     {
-        x: ['RPG', 'Ação', 'Estratégia', 'Aventura', 'Esportes'],
-        y: [40, 25, 15, 12, 8], // Percentagens de jogos mais jogados globalmente em 2024
+        x: ['Ação', 'Aventura', 'RPG', 'Esportes', 'Simulação'], // Categorias de jogos
+        y: [40, 25, 15, 10, 10], // Percentagens dos jogos mais populares globalmente
         type: 'bar',
         marker: {
-            color: ['#ff0000', '#d43f00', '#af5500', '#d4af37', '#ffd700'] // Vermelho, dourado e variações
+            color: ['#ff4500', '#ff6a33', '#ff8f66', '#ffb399', '#ffd6cc']
         }
     }
 ];
 
-const layoutGlobal = {
+const layout = {
     title: {
-        text: 'Distribuição Global de Jogos por Categoria (2024)',
-        font: { family: 'Russo One', size: 24, color: '#d4af37' }
+        text: 'Distribuição Global de Jogos por Gênero (2024)',
+        font: { family: 'Russo One', size: 24 }
     },
     xaxis: {
-        title: 'Categoria de Jogo',
-        titlefont: { family: 'Roboto', size: 18, color: '#ffd700' },
-        tickfont: { family: 'Roboto', size: 14, color: '#ffffff' }
+        title: 'Gênero de Jogo',
+        titlefont: { family: 'Roboto', size: 18 },
+        tickfont: { family: 'Roboto', size: 14 }
     },
     yaxis: {
         title: 'Percentagem (%)',
-        titlefont: { family: 'Roboto', size: 18, color: '#ffd700' },
-        tickfont: { family: 'Roboto', size: 14, color: '#ffffff' }
+        titlefont: { family: 'Roboto', size: 18 },
+        tickfont: { family: 'Roboto', size: 14 }
     },
-    plot_bgcolor: '#1c1c1c',
-    paper_bgcolor: '#0d0d0d',
-    font: { color: '#d4af37' }
+    plot_bgcolor: '#f8f9fa',
+    paper_bgcolor: '#f8f9fa'
 };
 
 // Exibe o gráfico na seção com id 'grafico'
-Plotly.newPlot('grafico', dataGlobal, layoutGlobal);
+Plotly.newPlot('grafico', data, layout);
 
-// Dados para o gráfico de Jogos no Colégio Morelli
+// Dados para o gráfico de Estatísticas de Jogos no Colégio Morelli
 const dataMorelli = [
     {
-        x: ['RPG', 'Estratégia', 'Ação', 'Aventura', 'Jogos Educativos'],
-        y: [35, 30, 20, 10, 5], // Percentagens de jogos mais jogados no Colégio Morelli
+        x: ['Ação', 'Aventura', 'RPG', 'Esportes', 'Jogos Educativos'], // Categorias de jogos no Colégio Morelli
+        y: [30, 25, 20, 10, 15], // Percentagens de jogos populares no Colégio Morelli em 2024
         type: 'bar',
         marker: {
-            color: ['#ff0000', '#d43f00', '#af5500', '#d4af37', '#ffd700'] // Vermelho, dourado e variações
+            color: ['#ff4500', '#ff6a33', '#ff8f66', '#ffb399', '#ffd6cc']
         }
     }
 ];
@@ -48,21 +47,20 @@ const dataMorelli = [
 const layoutMorelli = {
     title: {
         text: 'Distribuição de Jogos no Colégio Morelli (2024)',
-        font: { family: 'Russo One', size: 24, color: '#d4af37' }
+        font: { family: 'Russo One', size: 24 }
     },
     xaxis: {
-        title: 'Categoria de Jogo',
-        titlefont: { family: 'Roboto', size: 18, color: '#ffd700' },
-        tickfont: { family: 'Roboto', size: 14, color: '#ffffff' }
+        title: 'Gênero de Jogo',
+        titlefont: { family: 'Roboto', size: 18 },
+        tickfont: { family: 'Roboto', size: 14 }
     },
     yaxis: {
         title: 'Percentagem (%)',
-        titlefont: { family: 'Roboto', size: 18, color: '#ffd700' },
-        tickfont: { family: 'Roboto', size: 14, color: '#ffffff' }
+        titlefont: { family: 'Roboto', size: 18 },
+        tickfont: { family: 'Roboto', size: 14 }
     },
-    plot_bgcolor: '#1c1c1c',
-    paper_bgcolor: '#0d0d0d',
-    font: { color: '#d4af37' }
+    plot_bgcolor: '#f8f9fa',
+    paper_bgcolor: '#f8f9fa'
 };
 
 // Exibe o gráfico na seção com id 'grafico-morelli'
