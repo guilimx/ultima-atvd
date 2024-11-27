@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #1f2937; /* Preto metálico */
+    --primary-color: #FF0000; /* Vermelho */
     --secondary-color: #ffffff; /* Branco */
-    --accent-color: #ff4500; /* Laranja esportivo */
-    --bg-color: #f8f9fa; /* Cinza claro */
-    --font-title: 'Russo One', sans-serif; /* Fonte dinâmica para títulos */
+    --accent-color: #d4af37; /* Dourado */
+    --bg-color: #111111; /* Preto */
+    --font-title: 'Russo One', sans-serif; /* Fonte para títulos */
     --font-body: 'Roboto', sans-serif; /* Fonte para o corpo */
 }
 
@@ -13,19 +13,7 @@ body {
     margin: 0;
     font-family: var(--font-body);
     background-color: var(--bg-color);
-    color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
-    padding: 0;
-}
-
-header, main {
-    width: 100%;
-    max-width: 1200px; /* Limita a largura do conteúdo */
-    padding: 0 2rem;
+    color: var(--secondary-color);
 }
 
 header {
@@ -44,17 +32,13 @@ header {
 .logo h1 {
     margin: 0;
     font-size: 2rem;
-    font-family: var(--font-title); /* Aplica Russo One ao título da logo */
+    font-family: var(--font-title);
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
-}
-
-nav ul li {
-    font-size: 1rem;
 }
 
 nav ul li a {
@@ -69,13 +53,8 @@ nav ul li a:hover {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    padding: 2rem 0;
+    padding: 2rem;
     text-align: center;
-    flex-grow: 1; /* Permite que o conteúdo cresça e ocupe o espaço restante */
 }
 
 .intro {
@@ -85,40 +64,18 @@ main {
 .info-section {
     padding: 2rem;
     margin: 2rem auto;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     max-width: 800px;
 }
 
 .info-section h2 {
     font-size: 2.5rem;
-    font-family: var(--font-title); /* Aplica Russo One aos títulos */
-    color: var(--primary-color);
+    font-family: var(--font-title);
+    color: var(--accent-color);
     margin-bottom: 1rem;
-}
-
-.info-section p {
-    font-size: 1.2rem;
-    color: #444;
-    line-height: 1.6;
-}
-
-/* Estilos para a "caixinha" que envolve os gráficos */
-.grafico-container {
-    padding: 2rem;
-    margin: 2rem auto;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    max-width: 800px;
-    width: 100%;
-}
-
-/* Estilos específicos para o gráfico */
-#grafico, #grafico-morelli {
-    width: 100%;
-    height: 400px; /* Define uma altura fixa para o gráfico */
 }
 
 footer {
@@ -141,9 +98,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Aplica Russo One para qualquer outro título */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-title); /* Aplica Russo One a todos os títulos */
 }
