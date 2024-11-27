@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #ff0000; /* Vermelho */
-    --secondary-color: #ffffff; /* Branco */
-    --accent-color: #d4af37; /* Dourado */
-    --bg-color: #111111; /* Preto */
-    --font-title: 'Russo One', sans-serif; /* Fonte dinâmica para títulos */
-    --font-body: 'Roboto', sans-serif; /* Fonte para o corpo */
+    --primary-color: #0d0d0d; /* Preto */
+    --secondary-color: #d4af37; /* Dourado */
+    --accent-color: #ff0000; /* Vermelho */
+    --bg-color: #1c1c1c; /* Preto suave */
+    --font-title: 'Russo One', sans-serif;
+    --font-body: 'Roboto', sans-serif;
 }
 
 body {
@@ -52,35 +52,18 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-.intro {
-    padding: 2rem 0;
-}
-
 .info-section {
+    background: #1c1c1c;
+    color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
     padding: 2rem;
     margin: 2rem auto;
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
     max-width: 800px;
-}
-
-.info-section h2 {
-    font-size: 2.5rem;
-    font-family: var(--font-title);
-    color: var(--accent-color);
-    margin-bottom: 1rem;
 }
 
 footer {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
     text-align: center;
     padding: 1rem 0;
     border-top: 3px solid var(--accent-color);
